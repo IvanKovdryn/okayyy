@@ -114,7 +114,7 @@ if (sublists.length > 0) {
 // }
 
 const links = document.querySelectorAll(".nav-list-item[data-goto");
-if (links.length > 0) {
+if (links.length > 0 && document.window > 768) {
   links.forEach((link) => {
     link.addEventListener("click", onlinkclick);
   });
